@@ -6,6 +6,7 @@ import { Profile } from '../components/Profile';
 import { ChallengeBox } from '../components/challengeBox';
 
 import styles from '../styles/pages/Home.module.css';
+import { CountdownProvider } from '../contexts/CountdownContext';
 
 export default function Home() {
   return (
@@ -14,17 +15,18 @@ export default function Home() {
         <title>Inicio  | NLW4</title>
       </Head>
       <ExperienceBar />
-      <section>
-        <div>
-        <Profile />
-        <CompleteChallenge/>
-        <Countdown />
-        </div>
-        <div>
-        <ChallengeBox />
-        </div>
-
-      </section>
+      <CountdownProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompleteChallenge />
+            <Countdown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountdownProvider>
     </div>
   )
 }
