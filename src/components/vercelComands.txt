@@ -1,0 +1,109 @@
+Microsoft Windows [versão 10.0.19042.804]
+(c) 2020 Microsoft Corporation. Todos os direitos reservados.      
+
+J:\projetos\nlwquatro-next>npm i -g vercel
+
+> vercel@21.3.1 preinstall C:\Users\rcrro\AppData\Roaming\npm\node_modules\vercel
+> node ./scripts/preinstall.js
+
+C:\Users\rcrro\AppData\Roaming\npm\vc -> C:\Users\rcrro\AppData\Roaming\npm\node_modules\vercel\dist\index.js
+C:\Users\rcrro\AppData\Roaming\npm\vercel -> C:\Users\rcrro\AppData\Roaming\npm\node_modules\vercel\dist\index.js
++ vercel@21.3.1
+added 101 packages from 111 contributors in 31.476s
+
+J:\projetos\nlwquatro-next>vercel -h
+Vercel CLI 21.3.1
+
+  ▲ vercel [options] <command | path>
+
+  Commands:
+
+    Basic
+
+      deploy               [path]      Performs a deployment (default)
+      dev                              Start a local development server
+      env                              Manages the Environment Variables for your current Project
+      init                 [example]   Initialize an example project
+      ls | list            [app]       Lists deployments
+      inspect              [id]        Displays information related to a deployment
+      login                [email]     Logs into your account or creates a new one
+      logout                           Logs out of your account    
+      switch               [scope]     Switches between teams and your personal account
+      help                 [cmd]       Displays complete help for [cmd]
+
+    Advanced
+
+      rm | remove          [id]        Removes a deployment        
+      domains              [name]      Manages your domain names   
+      dns                  [name]      Manages your DNS records    
+      certs                [cmd]       Manages your SSL certificates
+      secrets              [name]      Manages your global Secrets, for use in Environment Variables
+      logs                 [url]       Displays the logs for a deployment
+      teams                            Manages your teams
+      whoami                           Shows the username of the currently logged in user
+
+  Options:
+
+    -h, --help                     Output usage information        
+    -v, --version                  Output the version number       
+    -V, --platform-version         Set the platform version to deploy to
+    -A FILE, --local-config=FILE   Path to the local `vercel.json` 
+file
+    -Q DIR, --global-config=DIR    Path to the global `.vercel` directory
+    -d, --debug                    Debug mode [off]
+    -f, --force                    Force a new deployment even if nothing has changed
+    --with-cache                   Retain build cache when using "--force"
+    -t TOKEN, --token=TOKEN        Login token
+    -p, --public                   Deployment is public (`/_src` is exposed)
+    -e, --env                      Include an env var during run time (e.g.: `-e KEY=value`). Can appear many times.
+    -b, --build-env                Similar to `--env` but for build time only.
+    -m, --meta                     Add metadata for the deployment 
+(e.g.: `-m KEY=value`). Can appear many times.
+    -C, --no-clipboard             Do not attempt to copy URL to clipboard
+    -S, --scope                    Set a custom scope
+    --regions                      Set default regions to enable the deployment on
+    --prod                         Create a production deployment  
+    -c, --confirm                  Confirm default options and skip questions
+
+  Examples:
+
+  – Deploy the current directory
+
+    $ vercel
+
+  – Deploy a custom path
+
+    $ vercel /usr/src/project
+
+  – Deploy with Environment Variables
+
+    $ vercel -e NODE_ENV=production -e SECRET=@mysql-secret        
+
+  – Show the usage information for the sub command `list`
+
+    $ vercel help list
+
+
+J:\projetos\nlwquatro-next>vercel login
+Vercel CLI 21.3.1
+We sent an email to rcr.rocha@outlook.com. Please follow the steps provided inside it a security code matches Careful Reindeer.
+√ Email confirmed
+Congratulations! You are now logged in. In order to deploy something, run `vercel`.
+�  Connect your Git Repositories to deploy every branch push automatically (https://ver
+? Which scope do you want to deploy to? rochatora
+? Which scope do you want to deploy to? rochatora
+? Link to existing project? [y/N] n
+? What’s your project’s name? nlwquatro-next
+? In which directory is your code located? ./
+Auto-detected Project Settings (Next.js):
+- Build Command: `npm run build` or `next build`
+- Output Directory: Next.js default
+- Development Command: next dev --port $PORT
+? Want to override the settings? [y/N] n
+�  Linked to rochatora/nlwquatro-next (created .vercel and added it to .gitignore)     
+�  Inspect: https://vercel.com/rochatora/nlwquatro-next/JA7NyG6QsA5KCwk2FHKKrjvCDAn5 [1s]
+✅  Production: https://nlwquatro-next.vercel.app [copied to clipboard] [38s]
+�  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+�  To change the domain or build command, go to https://vercel.com/rochatora/nlwquatro-next/settings
+
+J:\projetos\nlwquatro-next>
